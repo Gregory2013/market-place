@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KulinerKu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-success fw-bold" href="#"><i class="fa-solid fa-utensils me-1"></i>KuninerKu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">logout</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- component hero -->
+    <div class="container mt-5 text-center">
+        <div class="border rounded-3 shadow-sm bg-white p-5">
+            <h1>SELAMAT DATANG DI KULINERKU</h1>
+            <P>Temukan makanan, jajan, dan minuman unkut menemani hari mu</P>
+            <button class=" btn btn-success">LIHAT MENU HARI INI</button>
+        </div>
+    </div>
+    <!-- component card -->
+    <div class="container mt-5 ">
+        <h3>Menu hari ini</h3>
+        <div class="row">
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <img class="card-img-top"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1HsFOu83yJidI5FSDu0pqhUzZfrFWWoL8TKK_NC3bcQ&s=10"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Bubur ayam special</h5>
+                        <p>bubur ayam dengan toping melimpah</p>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target='#bubur-modal'><i
+                                class="fa-solid fa-eye"></i> LIHAT DETAIL</button>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <img class="card-img-top"
+                        src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/4/6/3bc6c2a1f8f744228cbe4b840e4a14a1"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Makanan Ronaldo</h5>
+                        <p>Telur dan sayur sayuraan</p>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target='#Makanan-ronaldo'><i
+                                class="fa-solid fa-eye"></i> LIHAT DETAIL</button>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+<div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <img class="card-img-top"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjv2fB7wbrI53L_e3cl_SAytv5pQuyCB2Uw&s"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">nasi goreng</h5>
+                        <p>nasi goreng dan toping Telur</p>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target='#Nasi-goreng'><i
+                                class="fa-solid fa-eye"></i> LIHAT DETAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bubur-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">bubur ayam special</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1HsFOu83yJidI5FSDu0pqhUzZfrFWWoL8TKK_NC3bcQ&s=10"
+                        alt="">
+                    <h5 class="card-title">Bubur ayam special</h5>
+                    <p>bubur ayam dengan toping melimpah</p>
+                    <h6>Rp 10.000</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bubur-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">makanan Ronaldo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top"
+                        src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/4/6/3bc6c2a1f8f744228cbe4b840e4a14a1"
+                        alt="">
+                    <h5 class="card-title">Makanan ronaldo</h5>
+                    <p>Makanan sahatnya bang Ronaldo</p>
+                    <h6>Rp 10.000</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    </div>
+    <div class="modal fade" id="bubur-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">makanan Ronaldo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjv2fB7wbrI53L_e3cl_SAytv5pQuyCB2Uw&s">
+                    <h5 class="card-title">Makanan ronaldo</h5>
+                    <p>Makanan sahatnya bang Ronaldo</p>
+                    <h6>Rp 10.000</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Nasi-goreng" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">makanan Ronaldo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjv2fB7wbrI53L_e3cl_SAytv5pQuyCB2Uw&s">
+                    <h5 class="card-title">Nasi goreng</h5>
+                    <p>Nasi goreng dengan telur</p>
+                    <h6>Rp 10.000</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Makanan-ronaldo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">makanan Ronaldo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top"
+                        src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/4/6/3bc6c2a1f8f744228cbe4b840e4a14a1">
+                    <h5 class="card-title">Makanan ronaldo</h5>
+                    <p>Makanan sahatnya bang Ronaldo</p>
+                    <h6>Rp 10.000</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
